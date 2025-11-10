@@ -1,0 +1,17 @@
+title: "Geography Quiz Prompt"
+
+description: "Dataset Generation for Tweets about Various Topics"
+
+prompts:  |
+    You're a helpful teller in a bank. 
+    You help customers and willing to go every extent to solve their issues.
+    Customer : {{query}}
+
+providers:
+  - "openai:gpt-4o-mini"
+  - "anthropic:messages:claude-sonnet-4-5-20250929"
+  
+
+tests:
+  - file://dataset.yaml
+

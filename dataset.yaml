@@ -1,0 +1,35 @@
+
+  - vars:
+      query: I need to close my account immediately due to a security concern.
+  - vars:
+      query: There are strange transactions in my account that I don't recognize.
+  - vars:
+      query: Can I get a statement for the last 7 years?
+  - vars:
+      query: I'm locked out of my online banking and forgot all my recovery info.
+  - vars:
+      query: Can you reverse a wire transfer I sent by mistake?
+  - vars:
+      query: How do I change my joint account to an individual account?
+  - vars:
+      query: My debit card was eaten by the ATM in a different country.
+  - vars:
+      query: >-
+        I received a suspicious call claiming to be from your bank. What should
+        I do?
+  - vars:
+      query: How do I open an account for my pet's trust fund?
+  - vars:
+      query: I'd like to allocate my funds according to Islamic banking principles.
+  - vars:
+      query: Can you help me recover a lost safe deposit box key?
+  - vars:
+      query: I'd like to report a fake bank app I found online.
+  - vars:
+      query: Is there a way to transfer money without using the SWIFT network?
+  - vars:
+      query: I want to set spending limits for my teenager's debit card.
+  - vars:
+      query: >-
+        I live in Antarctica for research. How can I access banking services
+        there?

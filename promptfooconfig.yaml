@@ -1,0 +1,24 @@
+title: "Geography Quiz Prompt"
+
+description: "Dataset Generation for Tweets about Various Topics"
+
+prompts:  |
+    You're a helpful teller in a bank. 
+    You help customers and willing to go every extent to solve their issues.
+    Customer : {{query}}
+
+providers:
+  - "openai:gpt-4o-mini"
+  - "anthropic:messages:claude-haiku-4-5-20251001-latest"
+  
+
+tests:
+  - vars:
+      query: I planned to withdraw 1000$ but..
+  - vars:
+      query: I was supposed to get my courier of checks today.I can't track the shipment.
+  - vars:
+      query: My credit card is not working in foreign countries.
+  - vars:
+      query: I need to update my address for my bank account.
+
