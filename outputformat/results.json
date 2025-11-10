@@ -1,0 +1,505 @@
+{
+  "evalId": "eval-0vs-2025-11-10T14:59:14",
+  "results": {
+    "version": 3,
+    "timestamp": "2025-11-10T14:59:14.653Z",
+    "prompts": [
+      {
+        "raw": "You're a helpful assistant in a bank. \nYou help customers on their transactions.\nCustomer : {{query}}\n",
+        "label": "You're a helpful assistant in a bank. \nYou help customers on their transactions.\nCustomer : {{query}}\n",
+        "id": "71b8084039298917b7454cc772cfff780508906d350eff523cabedc7e93365fb",
+        "provider": "openai:gpt-4o-mini",
+        "metrics": {
+          "score": 1,
+          "testPassCount": 1,
+          "testFailCount": 0,
+          "testErrorCount": 1,
+          "assertPassCount": 2,
+          "assertFailCount": 0,
+          "totalLatencyMs": 7827,
+          "tokenUsage": {
+            "prompt": 40,
+            "completion": 81,
+            "cached": 0,
+            "total": 121,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 313,
+              "prompt": 275,
+              "completion": 38,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.0000546
+        }
+      },
+      {
+        "raw": "You're a helpful assistant in a bank. \nYou help customers on their transactions.\nCustomer : {{query}}\n",
+        "label": "You're a helpful assistant in a bank. \nYou help customers on their transactions.\nCustomer : {{query}}\n",
+        "id": "71b8084039298917b7454cc772cfff780508906d350eff523cabedc7e93365fb",
+        "provider": "anthropic:claude-sonnet-4-5-20250929",
+        "metrics": {
+          "score": 1,
+          "testPassCount": 1,
+          "testFailCount": 0,
+          "testErrorCount": 1,
+          "assertPassCount": 2,
+          "assertFailCount": 0,
+          "totalLatencyMs": 15809,
+          "tokenUsage": {
+            "prompt": 42,
+            "completion": 231,
+            "cached": 0,
+            "total": 273,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 461,
+              "prompt": 404,
+              "completion": 57,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.003591
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0,
+        "error": "Error: Unknown assertion type: max-tokens\n\nError: Unknown assertion type: max-tokens\n    at runAssertion (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/dist/src/assertions/index.js:323:11)\n    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/dist/src/assertions/index.js:360:30\n    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:151:38\n    at replenish (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:447:21)\n    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:452:13\n    at Object.eachOfLimit (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:478:36)\n    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:220:25\n    at new Promise (<anonymous>)\n    at Object.awaitable (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:215:20)\n    at runAssertions (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/dist/src/assertions/index.js:355:27)",
+        "gradingResult": null,
+        "id": "70d2ceb8-676d-4f8e-aec5-5353ec722a77",
+        "latencyMs": 5324,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're a helpful assistant in a bank. \nYou help customers on their transactions.\nCustomer : I planned to withdraw 1000$ but it is not updated in my account.\n",
+          "label": "You're a helpful assistant in a bank. \nYou help customers on their transactions.\nCustomer : {{query}}\n"
+        },
+        "promptId": "71b8084039298917b7454cc772cfff780508906d350eff523cabedc7e93365fb",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "query": "I planned to withdraw 1000$ but it is not updated in my account."
+          },
+          "assert": [
+            {
+              "type": "icontains",
+              "value": "withdraw"
+            },
+            {
+              "type": "llm-rubric",
+              "value": "Ensure the response is emphathetic.\nOffers assistance to resolve the issue.\n"
+            },
+            {
+              "type": "max-tokens",
+              "value": 300
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "query": "I planned to withdraw 1000$ but it is not updated in my account."
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: Unknown assertion type: max-tokens\n\nError: Unknown assertion type: max-tokens\n    at runAssertion (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/dist/src/assertions/index.js:323:11)\n    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/dist/src/assertions/index.js:360:30\n    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:151:38\n    at replenish (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:447:21)\n    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:452:13\n    at Object.eachOfLimit (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:478:36)\n    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:220:25\n    at new Promise (<anonymous>)\n    at Object.awaitable (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:215:20)\n    at runAssertions (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/dist/src/assertions/index.js:355:27)",
+        "gradingResult": null,
+        "id": "c75e0e1e-d85e-4f29-bf0a-055b0a89cbc1",
+        "latencyMs": 8472,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're a helpful assistant in a bank. \nYou help customers on their transactions.\nCustomer : I planned to withdraw 1000$ but it is not updated in my account.\n",
+          "label": "You're a helpful assistant in a bank. \nYou help customers on their transactions.\nCustomer : {{query}}\n"
+        },
+        "promptId": "71b8084039298917b7454cc772cfff780508906d350eff523cabedc7e93365fb",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-sonnet-4-5-20250929",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "query": "I planned to withdraw 1000$ but it is not updated in my account."
+          },
+          "assert": [
+            {
+              "type": "icontains",
+              "value": "withdraw"
+            },
+            {
+              "type": "llm-rubric",
+              "value": "Ensure the response is emphathetic.\nOffers assistance to resolve the issue.\n"
+            },
+            {
+              "type": "max-tokens",
+              "value": 300
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "query": "I planned to withdraw 1000$ but it is not updated in my account."
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0.0000546,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 313,
+            "prompt": 275,
+            "completion": 38,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains-any",
+                "value": [
+                  "overdraft",
+                  "I understand",
+                  "fee",
+                  "fraudulent"
+                ]
+              }
+            },
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "value": "Ensure the response is emphathetic .\nOffers assistance to resolve the issue.\n"
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "The response is empathetic, acknowledging the inconvenience and offers assistance by requesting specific details to resolve the issue.",
+              "tokensUsed": {
+                "total": 313,
+                "prompt": 275,
+                "completion": 38,
+                "cached": 0,
+                "numRequests": 0,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "a9815550-ccb1-4cd8-98ff-4a54d81eaea1",
+        "latencyMs": 2503,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're a helpful assistant in a bank. \nYou help customers on their transactions.\nCustomer : I was charged a fee for overdraft even though I had sufficient funds.\n",
+          "label": "You're a helpful assistant in a bank. \nYou help customers on their transactions.\nCustomer : {{query}}\n"
+        },
+        "promptId": "71b8084039298917b7454cc772cfff780508906d350eff523cabedc7e93365fb",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "response": {
+          "output": "I apologize for the inconvenience you've experienced. Let's look into this matter together. Could you please provide me with the following details to help me assist you better?\n\n1. The date of the transaction in question.\n2. The amount of the overdraft fee charged.\n3. Any relevant transaction details that you believe might help clarify the situation.\n\nOnce I have that information, I can help you investigate this further!",
+          "tokenUsage": {
+            "total": 121,
+            "prompt": 40,
+            "completion": 81,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "finishReason": "stop",
+          "cost": 0.0000546
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "query": "I was charged a fee for overdraft even though I had sufficient funds."
+          },
+          "assert": [
+            {
+              "type": "icontains-any",
+              "value": [
+                "overdraft",
+                "I understand",
+                "fee",
+                "fraudulent"
+              ]
+            },
+            {
+              "type": "llm-rubric",
+              "value": "Ensure the response is emphathetic .\nOffers assistance to resolve the issue.\n"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "query": "I was charged a fee for overdraft even though I had sufficient funds."
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.003591,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 461,
+            "prompt": 404,
+            "completion": 57,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains-any",
+                "value": [
+                  "overdraft",
+                  "I understand",
+                  "fee",
+                  "fraudulent"
+                ]
+              }
+            },
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "value": "Ensure the response is emphathetic .\nOffers assistance to resolve the issue.\n"
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "The response begins with an empathetic acknowledgment of the user's frustration and clearly offers a plan to resolve the issue, including asking for more information and offering to review the account and request a refund if necessary.",
+              "tokensUsed": {
+                "total": 461,
+                "prompt": 404,
+                "completion": 57,
+                "cached": 0,
+                "numRequests": 0,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              }
+            }
+          ],
+          "assertion": null
+        },
+        "id": "58ab4e4f-41e3-46fe-b77a-ee42c7cea9b8",
+        "latencyMs": 7337,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're a helpful assistant in a bank. \nYou help customers on their transactions.\nCustomer : I was charged a fee for overdraft even though I had sufficient funds.\n",
+          "label": "You're a helpful assistant in a bank. \nYou help customers on their transactions.\nCustomer : {{query}}\n"
+        },
+        "promptId": "71b8084039298917b7454cc772cfff780508906d350eff523cabedc7e93365fb",
+        "promptIdx": 1,
+        "provider": {
+          "id": "anthropic:claude-sonnet-4-5-20250929",
+          "label": ""
+        },
+        "response": {
+          "output": "I understand your frustration, and I'm here to help resolve this issue for you.\n\nLet me look into this right away. To assist you better, I'll need a few details:\n\n1. **Which account** was charged the overdraft fee?\n2. **What date** did this fee appear?\n3. **What was your account balance** at the time of the transaction that triggered the fee?\n\nIn the meantime, here are some common reasons this might happen:\n\n- **Pending transactions** that hadn't cleared yet, reducing your available balance\n- **Holds placed on deposits** (checks may take time to fully clear)\n- **Timing of transactions** - sometimes debits process before credits on the same day\n- **Available vs. current balance** confusion\n\nOnce you provide those details, I can:\n- Review your account history\n- Identify what caused the fee\n- Request a refund if the fee was charged in error\n- Explain any holds or pending items\n\nWould you be able to share those details so I can investigate this for you?",
+          "tokenUsage": {
+            "total": 273,
+            "prompt": 42,
+            "completion": 231
+          },
+          "finishReason": "stop",
+          "cost": 0.003591
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "query": "I was charged a fee for overdraft even though I had sufficient funds."
+          },
+          "assert": [
+            {
+              "type": "icontains-any",
+              "value": [
+                "overdraft",
+                "I understand",
+                "fee",
+                "fraudulent"
+              ]
+            },
+            {
+              "type": "llm-rubric",
+              "value": "Ensure the response is emphathetic .\nOffers assistance to resolve the issue.\n"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "query": "I was charged a fee for overdraft even though I had sufficient funds."
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      }
+    ],
+    "stats": {
+      "successes": 2,
+      "failures": 0,
+      "errors": 2,
+      "tokenUsage": {
+        "prompt": 82,
+        "completion": 312,
+        "cached": 0,
+        "total": 394,
+        "numRequests": 2,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0
+        },
+        "assertions": {
+          "total": 774,
+          "prompt": 679,
+          "completion": 95,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0
+          }
+        }
+      }
+    }
+  },
+  "config": {
+    "description": "Output Format validations Various Tests",
+    "prompts": "You're a helpful assistant in a bank. \nYou help customers on their transactions.\nCustomer : {{query}}\n",
+    "providers": [
+      "openai:gpt-4o-mini",
+      "anthropic:messages:claude-sonnet-4-5-20250929"
+    ],
+    "tests": [
+      {
+        "vars": {
+          "query": "I planned to withdraw 1000$ but it is not updated in my account."
+        },
+        "assert": [
+          {
+            "type": "icontains",
+            "value": "withdraw"
+          },
+          {
+            "type": "llm-rubric",
+            "value": "Ensure the response is emphathetic.\nOffers assistance to resolve the issue.\n"
+          },
+          {
+            "type": "max-tokens",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "vars": {
+          "query": "I was charged a fee for overdraft even though I had sufficient funds."
+        },
+        "assert": [
+          {
+            "type": "icontains-any",
+            "value": [
+              "overdraft",
+              "I understand",
+              "fee",
+              "fraudulent"
+            ]
+          },
+          {
+            "type": "llm-rubric",
+            "value": "Ensure the response is emphathetic .\nOffers assistance to resolve the issue.\n"
+          }
+        ]
+      }
+    ],
+    "sharing": false,
+    "outputPath": [
+      "results.json"
+    ],
+    "extensions": []
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.118.11",
+    "nodeVersion": "v24.9.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "exportedAt": "2025-11-10T14:59:24.979Z",
+    "evaluationCreatedAt": "2025-11-10T14:59:14.653Z"
+  }
+}

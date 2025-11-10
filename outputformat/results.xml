@@ -1,0 +1,578 @@
+<promptfoo>
+  <evalId>eval-GJP-2025-11-10T15:00:54</evalId>
+  <results>
+    <version>3</version>
+    <timestamp>2025-11-10T15:00:54.309Z</timestamp>
+    <prompts>
+      <raw>You&apos;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : {{query}}
+</raw>
+      <label>You&apos;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : {{query}}
+</label>
+      <config></config>
+      <id>71b8084039298917b7454cc772cfff780508906d350eff523cabedc7e93365fb</id>
+      <provider>openai:gpt-4o-mini</provider>
+      <metrics>
+        <score>1</score>
+        <testPassCount>1</testPassCount>
+        <testFailCount>0</testFailCount>
+        <testErrorCount>1</testErrorCount>
+        <assertPassCount>2</assertPassCount>
+        <assertFailCount>0</assertFailCount>
+        <totalLatencyMs>17</totalLatencyMs>
+        <tokenUsage>
+          <prompt>0</prompt>
+          <completion>0</completion>
+          <cached>121</cached>
+          <total>121</total>
+          <numRequests>1</numRequests>
+          <completionDetails>
+            <reasoning>0</reasoning>
+            <acceptedPrediction>0</acceptedPrediction>
+            <rejectedPrediction>0</rejectedPrediction>
+          </completionDetails>
+          <assertions>
+            <total>313</total>
+            <prompt>0</prompt>
+            <completion>0</completion>
+            <cached>313</cached>
+            <numRequests>0</numRequests>
+            <completionDetails>
+              <reasoning>0</reasoning>
+              <acceptedPrediction>0</acceptedPrediction>
+              <rejectedPrediction>0</rejectedPrediction>
+            </completionDetails>
+          </assertions>
+        </tokenUsage>
+        <namedScores></namedScores>
+        <namedScoresCount></namedScoresCount>
+        <cost>0.0000546</cost>
+      </metrics>
+    </prompts>
+    <prompts>
+      <raw>You&apos;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : {{query}}
+</raw>
+      <label>You&apos;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : {{query}}
+</label>
+      <config></config>
+      <id>71b8084039298917b7454cc772cfff780508906d350eff523cabedc7e93365fb</id>
+      <provider>anthropic:claude-sonnet-4-5-20250929</provider>
+      <metrics>
+        <score>1</score>
+        <testPassCount>1</testPassCount>
+        <testFailCount>0</testFailCount>
+        <testErrorCount>1</testErrorCount>
+        <assertPassCount>2</assertPassCount>
+        <assertFailCount>0</assertFailCount>
+        <totalLatencyMs>28</totalLatencyMs>
+        <tokenUsage>
+          <prompt>0</prompt>
+          <completion>0</completion>
+          <cached>273</cached>
+          <total>273</total>
+          <numRequests>1</numRequests>
+          <completionDetails>
+            <reasoning>0</reasoning>
+            <acceptedPrediction>0</acceptedPrediction>
+            <rejectedPrediction>0</rejectedPrediction>
+          </completionDetails>
+          <assertions>
+            <total>461</total>
+            <prompt>0</prompt>
+            <completion>0</completion>
+            <cached>461</cached>
+            <numRequests>0</numRequests>
+            <completionDetails>
+              <reasoning>0</reasoning>
+              <acceptedPrediction>0</acceptedPrediction>
+              <rejectedPrediction>0</rejectedPrediction>
+            </completionDetails>
+          </assertions>
+        </tokenUsage>
+        <namedScores></namedScores>
+        <namedScoresCount></namedScoresCount>
+        <cost>0.003591</cost>
+      </metrics>
+    </prompts>
+    <results>
+      <cost>0</cost>
+      <description></description>
+      <error>Error: Unknown assertion type: threshold
+
+Error: Unknown assertion type: threshold
+    at runAssertion (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/dist/src/assertions/index.js:323:11)
+    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/dist/src/assertions/index.js:360:30
+    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:151:38
+    at replenish (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:447:21)
+    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:452:13
+    at Object.eachOfLimit (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:478:36)
+    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:220:25
+    at new Promise (&lt;anonymous&gt;)
+    at Object.awaitable (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:215:20)
+    at runAssertions (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/dist/src/assertions/index.js:355:27)</error>
+      <gradingResult></gradingResult>
+      <id>66101006-4d23-4efc-beb4-ae3d7f80a5f8</id>
+      <latencyMs>10</latencyMs>
+      <namedScores></namedScores>
+      <prompt>
+        <raw>You&apos;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : I planned to withdraw 1000$ but it is not updated in my account.
+</raw>
+        <label>You&apos;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : {{query}}
+</label>
+      </prompt>
+      <promptId>71b8084039298917b7454cc772cfff780508906d350eff523cabedc7e93365fb</promptId>
+      <promptIdx>0</promptIdx>
+      <provider>
+        <id>openai:gpt-4o-mini</id>
+        <label></label>
+      </provider>
+      <response></response>
+      <score>0</score>
+      <success>false</success>
+      <testCase>
+        <vars>
+          <query>I planned to withdraw 1000$ but it is not updated in my account.</query>
+        </vars>
+        <assert>
+          <type>icontains</type>
+          <value>withdraw</value>
+        </assert>
+        <assert>
+          <type>llm-rubric</type>
+          <value>Ensure the response is emphathetic.
+Offers assistance to resolve the issue.
+</value>
+        </assert>
+        <assert>
+          <type>threshold</type>
+          <value>0.3</value>
+        </assert>
+        <options></options>
+        <metadata></metadata>
+      </testCase>
+      <testIdx>0</testIdx>
+      <vars>
+        <query>I planned to withdraw 1000$ but it is not updated in my account.</query>
+      </vars>
+      <metadata></metadata>
+      <failureReason>2</failureReason>
+    </results>
+    <results>
+      <cost>0</cost>
+      <description></description>
+      <error>Error: Unknown assertion type: threshold
+
+Error: Unknown assertion type: threshold
+    at runAssertion (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/dist/src/assertions/index.js:323:11)
+    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/dist/src/assertions/index.js:360:30
+    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:151:38
+    at replenish (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:447:21)
+    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:452:13
+    at Object.eachOfLimit (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:478:36)
+    at /opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:220:25
+    at new Promise (&lt;anonymous&gt;)
+    at Object.awaitable (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/node_modules/async/dist/async.js:215:20)
+    at runAssertions (/opt/homebrew/Cellar/promptfoo/0.118.11/libexec/lib/node_modules/promptfoo/dist/src/assertions/index.js:355:27)</error>
+      <gradingResult></gradingResult>
+      <id>151f8880-9588-4a5e-bc83-6debe6dabab7</id>
+      <latencyMs>19</latencyMs>
+      <namedScores></namedScores>
+      <prompt>
+        <raw>You&apos;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : I planned to withdraw 1000$ but it is not updated in my account.
+</raw>
+        <label>You&apos;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : {{query}}
+</label>
+      </prompt>
+      <promptId>71b8084039298917b7454cc772cfff780508906d350eff523cabedc7e93365fb</promptId>
+      <promptIdx>1</promptIdx>
+      <provider>
+        <id>anthropic:claude-sonnet-4-5-20250929</id>
+        <label></label>
+      </provider>
+      <response></response>
+      <score>0</score>
+      <success>false</success>
+      <testCase>
+        <vars>
+          <query>I planned to withdraw 1000$ but it is not updated in my account.</query>
+        </vars>
+        <assert>
+          <type>icontains</type>
+          <value>withdraw</value>
+        </assert>
+        <assert>
+          <type>llm-rubric</type>
+          <value>Ensure the response is emphathetic.
+Offers assistance to resolve the issue.
+</value>
+        </assert>
+        <assert>
+          <type>threshold</type>
+          <value>0.3</value>
+        </assert>
+        <options></options>
+        <metadata></metadata>
+      </testCase>
+      <testIdx>0</testIdx>
+      <vars>
+        <query>I planned to withdraw 1000$ but it is not updated in my account.</query>
+      </vars>
+      <metadata></metadata>
+      <failureReason>2</failureReason>
+    </results>
+    <results>
+      <cost>0.003591</cost>
+      <description></description>
+      <error></error>
+      <gradingResult>
+        <pass>true</pass>
+        <score>1</score>
+        <reason>All assertions passed</reason>
+        <namedScores></namedScores>
+        <tokensUsed>
+          <total>461</total>
+          <prompt>0</prompt>
+          <completion>0</completion>
+          <cached>461</cached>
+          <numRequests>0</numRequests>
+        </tokensUsed>
+        <componentResults>
+          <pass>true</pass>
+          <score>1</score>
+          <reason>Assertion passed</reason>
+          <assertion>
+            <type>icontains-any</type>
+            <value>overdraft</value>
+            <value>I understand</value>
+            <value>fee</value>
+            <value>fraudulent</value>
+          </assertion>
+        </componentResults>
+        <componentResults>
+          <assertion>
+            <type>llm-rubric</type>
+            <value>Ensure the response is emphathetic .
+Offers assistance to resolve the issue.
+</value>
+          </assertion>
+          <pass>true</pass>
+          <score>1</score>
+          <reason>The response begins with an empathetic acknowledgment of the user&apos;s frustration and clearly offers a plan to resolve the issue, including asking for more information and offering to review the account and request a refund if necessary.</reason>
+          <tokensUsed>
+            <total>461</total>
+            <prompt>0</prompt>
+            <completion>0</completion>
+            <cached>461</cached>
+            <numRequests>0</numRequests>
+            <completionDetails>
+              <reasoning>0</reasoning>
+              <acceptedPrediction>0</acceptedPrediction>
+              <rejectedPrediction>0</rejectedPrediction>
+            </completionDetails>
+          </tokensUsed>
+        </componentResults>
+        <assertion></assertion>
+      </gradingResult>
+      <id>d98c85b8-13c4-49a5-8b68-47157b1957a8</id>
+      <latencyMs>9</latencyMs>
+      <namedScores></namedScores>
+      <prompt>
+        <raw>You&apos;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : I was charged a fee for overdraft even though I had sufficient funds.
+</raw>
+        <label>You&apos;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : {{query}}
+</label>
+      </prompt>
+      <promptId>71b8084039298917b7454cc772cfff780508906d350eff523cabedc7e93365fb</promptId>
+      <promptIdx>1</promptIdx>
+      <provider>
+        <id>anthropic:claude-sonnet-4-5-20250929</id>
+        <label></label>
+      </provider>
+      <response>
+        <output>I understand your frustration, and I&apos;m here to help resolve this issue for you.
+
+Let me look into this right away. To assist you better, I&apos;ll need a few details:
+
+1. **Which account** was charged the overdraft fee?
+2. **What date** did this fee appear?
+3. **What was your account balance** at the time of the transaction that triggered the fee?
+
+In the meantime, here are some common reasons this might happen:
+
+- **Pending transactions** that hadn&apos;t cleared yet, reducing your available balance
+- **Holds placed on deposits** (checks may take time to fully clear)
+- **Timing of transactions** - sometimes debits process before credits on the same day
+- **Available vs. current balance** confusion
+
+Once you provide those details, I can:
+- Review your account history
+- Identify what caused the fee
+- Request a refund if the fee was charged in error
+- Explain any holds or pending items
+
+Would you be able to share those details so I can investigate this for you?</output>
+        <tokenUsage>
+          <cached>273</cached>
+          <total>273</total>
+        </tokenUsage>
+        <finishReason>stop</finishReason>
+        <cost>0.003591</cost>
+      </response>
+      <score>1</score>
+      <success>true</success>
+      <testCase>
+        <vars>
+          <query>I was charged a fee for overdraft even though I had sufficient funds.</query>
+        </vars>
+        <assert>
+          <type>icontains-any</type>
+          <value>overdraft</value>
+          <value>I understand</value>
+          <value>fee</value>
+          <value>fraudulent</value>
+        </assert>
+        <assert>
+          <type>llm-rubric</type>
+          <value>Ensure the response is emphathetic .
+Offers assistance to resolve the issue.
+</value>
+        </assert>
+        <options></options>
+        <metadata></metadata>
+      </testCase>
+      <testIdx>1</testIdx>
+      <vars>
+        <query>I was charged a fee for overdraft even though I had sufficient funds.</query>
+      </vars>
+      <metadata>
+        <_promptfooFileMetadata></_promptfooFileMetadata>
+      </metadata>
+      <failureReason>0</failureReason>
+    </results>
+    <results>
+      <cost>0.0000546</cost>
+      <description></description>
+      <error></error>
+      <gradingResult>
+        <pass>true</pass>
+        <score>1</score>
+        <reason>All assertions passed</reason>
+        <namedScores></namedScores>
+        <tokensUsed>
+          <total>313</total>
+          <prompt>0</prompt>
+          <completion>0</completion>
+          <cached>313</cached>
+          <numRequests>0</numRequests>
+        </tokensUsed>
+        <componentResults>
+          <pass>true</pass>
+          <score>1</score>
+          <reason>Assertion passed</reason>
+          <assertion>
+            <type>icontains-any</type>
+            <value>overdraft</value>
+            <value>I understand</value>
+            <value>fee</value>
+            <value>fraudulent</value>
+          </assertion>
+        </componentResults>
+        <componentResults>
+          <assertion>
+            <type>llm-rubric</type>
+            <value>Ensure the response is emphathetic .
+Offers assistance to resolve the issue.
+</value>
+          </assertion>
+          <pass>true</pass>
+          <score>1</score>
+          <reason>The response is empathetic, acknowledging the inconvenience and offers assistance by requesting specific details to resolve the issue.</reason>
+          <tokensUsed>
+            <total>313</total>
+            <prompt>0</prompt>
+            <completion>0</completion>
+            <cached>313</cached>
+            <numRequests>0</numRequests>
+            <completionDetails>
+              <reasoning>0</reasoning>
+              <acceptedPrediction>0</acceptedPrediction>
+              <rejectedPrediction>0</rejectedPrediction>
+            </completionDetails>
+          </tokensUsed>
+        </componentResults>
+        <assertion></assertion>
+      </gradingResult>
+      <id>250c4e09-928b-458f-8f23-71230ff2a549</id>
+      <latencyMs>7</latencyMs>
+      <namedScores></namedScores>
+      <prompt>
+        <raw>You&apos;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : I was charged a fee for overdraft even though I had sufficient funds.
+</raw>
+        <label>You&apos;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : {{query}}
+</label>
+      </prompt>
+      <promptId>71b8084039298917b7454cc772cfff780508906d350eff523cabedc7e93365fb</promptId>
+      <promptIdx>0</promptIdx>
+      <provider>
+        <id>openai:gpt-4o-mini</id>
+        <label></label>
+      </provider>
+      <response>
+        <output>I apologize for the inconvenience you&apos;ve experienced. Let&apos;s look into this matter together. Could you please provide me with the following details to help me assist you better?
+
+1. The date of the transaction in question.
+2. The amount of the overdraft fee charged.
+3. Any relevant transaction details that you believe might help clarify the situation.
+
+Once I have that information, I can help you investigate this further!</output>
+        <tokenUsage>
+          <cached>121</cached>
+          <total>121</total>
+        </tokenUsage>
+        <cached>true</cached>
+        <finishReason>stop</finishReason>
+        <cost>0.0000546</cost>
+      </response>
+      <score>1</score>
+      <success>true</success>
+      <testCase>
+        <vars>
+          <query>I was charged a fee for overdraft even though I had sufficient funds.</query>
+        </vars>
+        <assert>
+          <type>icontains-any</type>
+          <value>overdraft</value>
+          <value>I understand</value>
+          <value>fee</value>
+          <value>fraudulent</value>
+        </assert>
+        <assert>
+          <type>llm-rubric</type>
+          <value>Ensure the response is emphathetic .
+Offers assistance to resolve the issue.
+</value>
+        </assert>
+        <options></options>
+        <metadata></metadata>
+      </testCase>
+      <testIdx>1</testIdx>
+      <vars>
+        <query>I was charged a fee for overdraft even though I had sufficient funds.</query>
+      </vars>
+      <metadata>
+        <_promptfooFileMetadata></_promptfooFileMetadata>
+      </metadata>
+      <failureReason>0</failureReason>
+    </results>
+    <stats>
+      <successes>2</successes>
+      <failures>0</failures>
+      <errors>2</errors>
+      <tokenUsage>
+        <prompt>0</prompt>
+        <completion>0</completion>
+        <cached>394</cached>
+        <total>394</total>
+        <numRequests>2</numRequests>
+        <completionDetails>
+          <reasoning>0</reasoning>
+          <acceptedPrediction>0</acceptedPrediction>
+          <rejectedPrediction>0</rejectedPrediction>
+        </completionDetails>
+        <assertions>
+          <total>774</total>
+          <prompt>0</prompt>
+          <completion>0</completion>
+          <cached>774</cached>
+          <numRequests>0</numRequests>
+          <completionDetails>
+            <reasoning>0</reasoning>
+            <acceptedPrediction>0</acceptedPrediction>
+            <rejectedPrediction>0</rejectedPrediction>
+          </completionDetails>
+        </assertions>
+      </tokenUsage>
+    </stats>
+  </results>
+  <config>
+    <tags></tags>
+    <description>Output Format validations Various Tests</description>
+    <prompts>You&apos;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : {{query}}
+</prompts>
+    <providers>openai:gpt-4o-mini</providers>
+    <providers>anthropic:messages:claude-sonnet-4-5-20250929</providers>
+    <tests>
+      <vars>
+        <query>I planned to withdraw 1000$ but it is not updated in my account.</query>
+      </vars>
+      <assert>
+        <type>icontains</type>
+        <value>withdraw</value>
+      </assert>
+      <assert>
+        <type>llm-rubric</type>
+        <value>Ensure the response is emphathetic.
+Offers assistance to resolve the issue.
+</value>
+      </assert>
+      <assert>
+        <type>threshold</type>
+        <value>0.3</value>
+      </assert>
+    </tests>
+    <tests>
+      <vars>
+        <query>I was charged a fee for overdraft even though I had sufficient funds.</query>
+      </vars>
+      <assert>
+        <type>icontains-any</type>
+        <value>overdraft</value>
+        <value>I understand</value>
+        <value>fee</value>
+        <value>fraudulent</value>
+      </assert>
+      <assert>
+        <type>llm-rubric</type>
+        <value>Ensure the response is emphathetic .
+Offers assistance to resolve the issue.
+</value>
+      </assert>
+    </tests>
+    <scenarios></scenarios>
+    <env></env>
+    <sharing>false</sharing>
+    <defaultTest></defaultTest>
+    <derivedMetrics></derivedMetrics>
+    <outputPath>results.xml</outputPath>
+    <metadata></metadata>
+    <redteam></redteam>
+    <tracing></tracing>
+    <evaluateOptions></evaluateOptions>
+  </config>
+  <shareableUrl></shareableUrl>
+</promptfoo>
