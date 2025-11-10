@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Output Format validations Various Tests</title>
+    <style>
+      body {
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        word-break: break-all;
+      }
+      th,
+      td {
+        padding: 5px;
+        min-width: 200px;
+        white-space: pre-line;
+        vertical-align: top;
+      }
+
+      tr > td[data-content^='[PASS]'] {
+        color: green;
+      }
+      tr > td[data-content^='[FAIL]'] {
+        color: #ad0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        
+        <th>query</th>
+        
+        <th>[openai:gpt-4o-mini] You&#39;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : {{query}}
+</th>
+        
+        <th>[anthropic:claude-sonnet-4-5-20250929] You&#39;re a helpful assistant in a bank. 
+You help customers on their transactions.
+Customer : {{query}}
+</th>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td data-content="I planned to withdraw 1000$ but it is not updated in my account.">I planned to withdraw 1000$ but it is not updated in my account.</td>
+          
+          <td data-content="[PASS] (1.00)
+
+I’m here to assist you. There could be a few reasons why the withdrawal of $1,000 isn&#39;t reflected in your account. Let me help you with this:
+
+1. **Transaction Processing Time**: Sometimes, transactions can take a little time to process, especially if it was done electronically or outside of business hours.
+
+2. **ATM or System Error**: If you withdrew the money from an ATM or online, there might have been an error. Check to see if you received a receipt or confirmation of the transaction.
+
+3. **Account Balance Refresh**: Refresh your account balance or log out and back into your online banking to see if the changes take effect.
+
+4. **Pending Transactions**: Check your account for any pending transactions that might be affecting your available balance.
+
+5. **Contact Customer Service**: If the amount still isn’t reflecting in your account, you may need to contact customer service or visit a branch for further assistance. 
+
+Please let me know what you&#39;ve checked so far, and I can guide you further!
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+I’m here to assist you. There could be a few reasons why the withdrawal of $1,000 isn&#39;t reflected in your account. Let me help you with this:
+
+1. **Transaction Processing Time**: Sometimes, transactions can take a little time to process, especially if it was done electronically or outside of business hours.
+
+2. **ATM or System Error**: If you withdrew the money from an ATM or online, there might have been an error. Check to see if you received a receipt or confirmation of the transaction.
+
+3. **Account Balance Refresh**: Refresh your account balance or log out and back into your online banking to see if the changes take effect.
+
+4. **Pending Transactions**: Check your account for any pending transactions that might be affecting your available balance.
+
+5. **Contact Customer Service**: If the amount still isn’t reflecting in your account, you may need to contact customer service or visit a branch for further assistance. 
+
+Please let me know what you&#39;ve checked so far, and I can guide you further!
+
+Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+I understand your concern about the $1000 withdrawal not showing in your account. Let me help you resolve this issue.
+
+To assist you better, I need a few details:
+
+1. **When did you make the withdrawal?** (Date and approximate time)
+2. **How did you withdraw?** (ATM, bank teller, or online transfer?)
+3. **Did you receive a receipt or transaction confirmation?**
+4. **Which account did you withdraw from?** (Checking or Savings?)
+
+In the meantime, here are some common reasons for delays:
+
+- **Processing time**: Transactions can take 24-48 hours to reflect, especially if made after business hours or on weekends
+- **ATM issues**: If using an ATM, there might have been a technical issue
+- **Pending status**: The transaction might be pending and will update soon
+
+**Immediate steps I can take:**
+- Check your recent transaction history
+- Verify if the withdrawal was processed successfully
+- File a transaction dispute if needed
+- Provide you with a temporary credit if the funds were dispensed but not debited
+
+Could you please provide those details so I can investigate this further for you?
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+I understand your concern about the $1000 withdrawal not showing in your account. Let me help you resolve this issue.
+
+To assist you better, I need a few details:
+
+1. **When did you make the withdrawal?** (Date and approximate time)
+2. **How did you withdraw?** (ATM, bank teller, or online transfer?)
+3. **Did you receive a receipt or transaction confirmation?**
+4. **Which account did you withdraw from?** (Checking or Savings?)
+
+In the meantime, here are some common reasons for delays:
+
+- **Processing time**: Transactions can take 24-48 hours to reflect, especially if made after business hours or on weekends
+- **ATM issues**: If using an ATM, there might have been a technical issue
+- **Pending status**: The transaction might be pending and will update soon
+
+**Immediate steps I can take:**
+- Check your recent transaction history
+- Verify if the withdrawal was processed successfully
+- File a transaction dispute if needed
+- Provide you with a temporary credit if the funds were dispensed but not debited
+
+Could you please provide those details so I can investigate this further for you?
+
+Pass Reason: All assertions passed</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="I was charged a fee for overdraft even though I had sufficient funds.">I was charged a fee for overdraft even though I had sufficient funds.</td>
+          
+          <td data-content="[PASS] (1.00)
+
+I apologize for the inconvenience you&#39;ve experienced. Let&#39;s look into this matter together. Could you please provide me with the following details to help me assist you better?
+
+1. The date of the transaction in question.
+2. The amount of the overdraft fee charged.
+3. Any relevant transaction details that you believe might help clarify the situation.
+
+Once I have that information, I can help you investigate this further!
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+I apologize for the inconvenience you&#39;ve experienced. Let&#39;s look into this matter together. Could you please provide me with the following details to help me assist you better?
+
+1. The date of the transaction in question.
+2. The amount of the overdraft fee charged.
+3. Any relevant transaction details that you believe might help clarify the situation.
+
+Once I have that information, I can help you investigate this further!
+
+Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+I understand your frustration, and I&#39;m here to help resolve this issue for you.
+
+Let me look into this right away. To assist you better, I&#39;ll need a few details:
+
+1. **Which account** was charged the overdraft fee?
+2. **What date** did this fee appear?
+3. **What was your account balance** at the time of the transaction that triggered the fee?
+
+In the meantime, here are some common reasons this might happen:
+
+- **Pending transactions** that hadn&#39;t cleared yet, reducing your available balance
+- **Holds placed on deposits** (checks may take time to fully clear)
+- **Timing of transactions** - sometimes debits process before credits on the same day
+- **Available vs. current balance** confusion
+
+Once you provide those details, I can:
+- Review your account history
+- Identify what caused the fee
+- Request a refund if the fee was charged in error
+- Explain any holds or pending items
+
+Would you be able to share those details so I can investigate this for you?
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+I understand your frustration, and I&#39;m here to help resolve this issue for you.
+
+Let me look into this right away. To assist you better, I&#39;ll need a few details:
+
+1. **Which account** was charged the overdraft fee?
+2. **What date** did this fee appear?
+3. **What was your account balance** at the time of the transaction that triggered the fee?
+
+In the meantime, here are some common reasons this might happen:
+
+- **Pending transactions** that hadn&#39;t cleared yet, reducing your available balance
+- **Holds placed on deposits** (checks may take time to fully clear)
+- **Timing of transactions** - sometimes debits process before credits on the same day
+- **Available vs. current balance** confusion
+
+Once you provide those details, I can:
+- Review your account history
+- Identify what caused the fee
+- Request a refund if the fee was charged in error
+- Explain any holds or pending items
+
+Would you be able to share those details so I can investigate this for you?
+
+Pass Reason: All assertions passed</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>

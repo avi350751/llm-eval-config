@@ -1,0 +1,37 @@
+title: "Validate different output formats"
+
+description: "Output Format validations Various Tests"
+
+prompts:  |
+    You're a helpful assistant in a bank. 
+    You help customers on their transactions.
+    Customer : {{query}}
+
+providers:
+  - "openai:gpt-4o-mini"
+  - "anthropic:messages:claude-sonnet-4-5-20250929"
+  
+
+tests:
+  - vars:
+      query: I planned to withdraw 1000$ but it is not updated in my account.
+    assert:
+        -   type: icontains
+            value: withdraw
+        -   type: llm-rubric
+            value: |
+                Ensure the response is emphathetic.
+                Offers assistance to resolve the issue.
+        -   type: conversation-relevance
+            threshold: 0.75
+
+  - vars:
+      query: I was charged a fee for overdraft even though I had sufficient funds.
+    assert:
+        -   type: icontains-any
+            value: ["overdraft","I understand","fee","fraudulent"]
+        -   type: llm-rubric
+            value: |
+                Ensure the response is emphathetic .
+                Offers assistance to resolve the issue.
+
