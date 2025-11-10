@@ -1,0 +1,113 @@
+
+  - vars:
+      query: >-
+        I accidentally transferred money to the wrong account. Can you reverse
+        it?
+  - vars:
+      query: >-
+        I'm unable to set a new PIN for my debit card—it's giving me an error
+        code 572.
+  - vars:
+      query: >-
+        I've received two SMS alerts for the same transaction, but my balance
+        shows both deductions.
+  - vars:
+      query: >-
+        My joint account holder is overseas and cannot verify transactions; how
+        can we proceed?
+  - vars:
+      query: >-
+        The mobile app crashes whenever I try to view my transaction history for
+        last year.
+  - vars:
+      query: My balance is showing negative after a failed ATM withdrawal.
+  - vars:
+      query: >-
+        I set up a scheduled payment, but it's not appearing in my upcoming
+        payments list.
+  - vars:
+      query: >-
+        The cheque I deposited last week hasn't cleared, and I received a
+        deposit reversal notification.
+  - vars:
+      query: >-
+        I've reached the maximum daily transfer limit but need to make an urgent
+        international payment.
+  - vars:
+      query: >-
+        My online banking session timed out during a fund transfer. Was the
+        transaction successful?
+  - vars:
+      query: >-
+        I received an unexpected SMS about a new beneficiary being added. I did
+        not authorize this.
+  - vars:
+      query: >-
+        My account is frozen after multiple incorrect password attempts. How do
+        I unlock it quickly?
+  - vars:
+      query: >-
+        The currency conversion rate used for my credit card transaction seems
+        off.
+  - vars:
+      query: >-
+        The ATM dispensed partial cash and then shut down. I didn't get the full
+        amount.
+  - vars:
+      query: There's a duplicate charge on my statement for a recent utility payment.
+  - vars:
+      query: >-
+        I'm trying to close my fixed deposit early but the system won't allow me
+        to proceed.
+  - vars:
+      query: My account type has been changed without my request.
+  - vars:
+      query: >-
+        I requested a bank statement via email but received someone else’s
+        statement by mistake.
+  - vars:
+      query: >-
+        The biometric login on the mobile app isn’t recognizing my fingerprint
+        anymore.
+  - vars:
+      query: I see an international transaction fee on a domestic purchase. Why?
+  - vars:
+      query: >-
+        I accidentally transferred $10,000 to the wrong account just now. Can
+        you reverse the transaction immediately?
+  - vars:
+      query: >-
+        Why is my account showing a negative balance after I deposited a check
+        yesterday?
+  - vars:
+      query: >-
+        I need to withdraw $25,000 in cash right now—are there any limits or
+        special requirements?
+  - vars:
+      query: >-
+        I think someone has fraudulently accessed my account; there are
+        purchases from another country this morning.
+  - vars:
+      query: >-
+        Can I close my account and transfer all funds, including my fixed
+        deposit which is not yet matured?
+  - vars:
+      query: >-
+        I noticed double charges for a transaction at a store. Can you help me
+        dispute this?
+  - vars:
+      query: >-
+        I want to set up a recurring international wire transfer, but I'm not
+        sure if my account supports this.
+  - vars:
+      query: >-
+        My debit card expired last month and I haven't received a new one yet.
+        What should I do?
+  - vars:
+      query: >-
+        I reached my daily ATM withdrawal limit, but I urgently need more cash.
+        Is there any way to increase it temporarily?
+  - vars:
+      query: >-
+        There's a large pending deposit in my account that hasn't cleared for
+        over a week. Can you explain the delay?
